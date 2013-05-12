@@ -419,6 +419,7 @@ void* myDmtxDecode(void *th_data)
                                     rotateInt -= 360;
 
                                 // Print out message
+                                // Only for debugging purposes
                                 pthread_mutex_lock(&print_mutex);
                                 printf("\nMessage: %s %d\n", msg->output, pxl[45]);
                                 pthread_mutex_unlock(&print_mutex); 
